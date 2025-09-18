@@ -92,13 +92,13 @@ The application will start on *http://localhost:8080.*
 ## API Endpoints
 The base URL for all endpoints is /api/v1/todos.
 
-Method | Endpoint | Description                  | Request Body (Example)                            | Success Response (Example)                               |
--------|----------|------------------------------|---------------------------------------------------|----------------------------------------------------------|
-GET    | /        | Get all todo items.          | (None)                                            | [{"id":1,"title":"Learn Spring Boot","completed":false}] |
-GET    | /{id}    | Get a single todo by its ID. | (None)                                            | {"id":1,"title":"Learn Spring Boot","completed":false}   |
-POST   | /        | Create a new todo item.      | {"title": "Deploy to AWS"}                        | {"id":2,"title":"Deploy to AWS","completed":false}       |    
-PUT    | /{id}    | Update an existing todo.     | {"title": "Deploy to AWS EC2", "completed": true} | {"id":2,"title":"Deploy to AWS EC2","completed":true}    |
-DELETE | /{id}    | Delete a todo item by its ID.| (None)                                            | 204 No Content                                           |
+| Method | Endpoint | Description                   | Request Body (Example)                            | Success Response (Example)                               |
+|--------|----------|-------------------------------|---------------------------------------------------|----------------------------------------------------------|
+| GET    | /        | Get all todo items.           | (None)                                            | [{"id":1,"title":"Learn Spring Boot","completed":false}] |
+| GET    | /{id}    | Get a single todo by its ID.  | (None)                                            | {"id":1,"title":"Learn Spring Boot","completed":false}   |
+| POST   | /        | Create a new todo item.       | {"title": "Deploy to AWS"}                        | {"id":2,"title":"Deploy to AWS","completed":false}       |    
+| PUT    | /{id}    | Update an existing todo.      | {"title": "Deploy to AWS EC2", "completed": true} | {"id":2,"title":"Deploy to AWS EC2","completed":true}    |
+| DELETE | /{id}    | Delete a todo item by its ID. | (None)                                            | 204 No Content                                           |
 
 ## Building for Production
 To package the application into an executable JAR file for deployment, run the following command from the project root:
